@@ -1,0 +1,163 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #181818;
+    color: #fff;
+}
+
+/* Main Container */
+.container {
+    text-align: center;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Header */
+header h1 {
+    font-size: 26px;
+    margin-bottom: 5px;
+    color: #1db954;
+}
+
+header p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Input Group */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    background: #333;
+    color: white;
+    outline: none;
+}
+
+button {
+    background: #1db954;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #17a04d;
+}
+
+/* Loading Spinner */
+#loading {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #1db954;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-left-color: #1db954;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Video Player */
+#result-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+video {
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+/* Actions (Copy, Share, Download) */
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.actions button, .actions a {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.actions button {
+    background: #1db954;
+}
+
+.actions button:hover {
+    background: #17a04d;
+}
+
+.actions a {
+    background: #e74c3c;
+}
+
+.actions a:hover {
+    background: #c0392b;
+}
+
+/* Footer */
+footer {
+    margin-top: 15px;
+    font-size: 12px;
+    opacity: 0.8;
+}
